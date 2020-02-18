@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //APP_ID: Parstagram
+        //MASTER_KEY: Parstagram1
+        //PARSE_MOUNT: /parse
+        //URL: https://parstagram--pallav.herokuapp.com/parse
+        
+        Parse.initialize(
+            with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "Parstagram"
+                configuration.server = "https://parstagram--pallav.herokuapp.com/parse"
+            })
+        )
+        
         return true
     }
 
