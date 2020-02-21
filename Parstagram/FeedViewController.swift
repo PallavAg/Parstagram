@@ -21,7 +21,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         tableView.delegate = self
         tableView.dataSource = self
-        self.tableView.rowHeight = 450
+        self.tableView.rowHeight = 430
         // Do any additional setup after loading the view.
     }
     
