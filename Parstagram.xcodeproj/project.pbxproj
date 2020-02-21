@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48EA5CB19A71E668AB69D989 /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40963407B1A43629FA025A0 /* Pods_Parstagram.framework */; };
+		763F890E23FF958100C9FFE2 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763F890D23FF958100C9FFE2 /* PostCell.swift */; };
 		765BAEBA23FB5E5800EEB161 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BAEB923FB5E5800EEB161 /* AppDelegate.swift */; };
 		765BAEBC23FB5E5800EEB161 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BAEBB23FB5E5800EEB161 /* SceneDelegate.swift */; };
 		765BAEC123FB5E5800EEB161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765BAEBF23FB5E5800EEB161 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		1F6EB08559821A97866FE072 /* Pods-Parstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram.release.xcconfig"; path = "Target Support Files/Pods-Parstagram/Pods-Parstagram.release.xcconfig"; sourceTree = "<group>"; };
+		763F890D23FF958100C9FFE2 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		765BAEB623FB5E5800EEB161 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765BAEB923FB5E5800EEB161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		765BAEBB23FB5E5800EEB161 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				76CF45E523FF799E00EEBD43 /* LoginViewController.swift */,
 				76CF45E723FF79A700EEBD43 /* FeedViewController.swift */,
 				76CF45E923FF814B00EEBD43 /* CameraViewController.swift */,
+				763F890D23FF958100C9FFE2 /* PostCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				765BAEBA23FB5E5800EEB161 /* AppDelegate.swift in Sources */,
 				76CF45E823FF79A700EEBD43 /* FeedViewController.swift in Sources */,
 				765BAEBC23FB5E5800EEB161 /* SceneDelegate.swift in Sources */,
+				763F890E23FF958100C9FFE2 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
