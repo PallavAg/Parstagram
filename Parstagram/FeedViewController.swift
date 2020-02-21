@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -20,7 +21,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         tableView.delegate = self
         tableView.dataSource = self
-        
+        self.tableView.rowHeight = 450
         // Do any additional setup after loading the view.
     }
     
@@ -54,7 +55,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let user = post["author"] as! PFUser
         cell.usernameLabel.text = user.username
-        
         cell.captionLabel.text = post["caption"] as! String
         
         let imageFile = post["image"] as! PFFileObject
@@ -62,19 +62,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let url = URL(string: urlString)!
         
         cell.photoView.af_setImage(withURL: url)
-        
         return cell
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
