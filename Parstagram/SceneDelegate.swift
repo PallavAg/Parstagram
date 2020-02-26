@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -14,6 +15,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+       // Override point for customization after application launch.
+                
+                //APP_ID: Parstagram
+                //MASTER_KEY: Parstagram1
+                //PARSE_MOUNT: /parse
+                //URL: https://parstagram--pallav.herokuapp.com/parse
+                
+                if PFUser.current() != nil {
+                    let main = UIStoryboard(name: "Main", bundle: nil)
+                    let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+        
+                    window?.rootViewController = feedNavigationController
+                }
+                
+                
+        
+        
+        
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).

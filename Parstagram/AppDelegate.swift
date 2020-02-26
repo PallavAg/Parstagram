@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //MASTER_KEY: Parstagram1
         //PARSE_MOUNT: /parse
         //URL: https://parstagram--pallav.herokuapp.com/parse
-        
+
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "Parstagram"
